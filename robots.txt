@@ -1,0 +1,7 @@
+# Pra Lívia — https://pra-livia.netlify.app
+User-agent: *
+Allow: /
+Disallow: /tools/
+Disallow: /docs/
+
+Sitemap: https://pra-livia.netlify.app/sitemap.xml
