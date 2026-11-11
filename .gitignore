@@ -1,0 +1,26 @@
+# --- Fotos/vídeos originais (ficam fora do repo, em ../_originais) ---
+WhatsApp Unknown*/
+WhatsApp Image*
+Video by*
+*.mov
+*.heic
+
+# --- Arquivos temporários das ferramentas ---
+tools/.cache/
+assets/video/anel-preview.png
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Sistema / editores ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# --- Netlify ---
+.netlify/
+node_modules/

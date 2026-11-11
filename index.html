@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =====================================================================
+       Ela é simplesmente incrível — uma homenagem para a Lívia
+       Feito com amor pelo Gabriel · https://pra-livia.netlify.app
+       ===================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- SEO básico -->
+  <title>Ela é simplesmente incrível · Uma homenagem para a Lívia</title>
+  <meta name="description" content="Um site feito com todo o amor do Gabriel para a Lívia: nossos momentos, as fotos mais lindas dela, mensagens do coração e uma música especial. Porque ela é simplesmente incrível.">
+  <meta name="author" content="Gabriel">
+  <meta name="keywords" content="Lívia, homenagem, declaração de amor, namorada, ela é simplesmente incrível, site de amor, Gabriel e Lívia">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://pra-livia.netlify.app/">
+
+  <!-- Cores do navegador / app -->
+  <meta name="theme-color" content="#12050b">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Pra Lívia">
+  <meta name="application-name" content="Pra Lívia">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Favicons e ícones -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph: WhatsApp, Instagram, Facebook, LinkedIn, Telegram, Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pra Lívia">
+  <meta property="og:title" content="Ela é simplesmente incrível 💗">
+  <meta property="og:description" content="Lívia, eu fiz uma coisa pra você. Abre com carinho. Com todo o amor do Gabriel.">
+  <meta property="og:url" content="https://pra-livia.netlify.app/">
+  <meta property="og:image" content="https://pra-livia.netlify.app/assets/img/social/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://pra-livia.netlify.app/assets/img/social/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Polaroids da Lívia e do Gabriel com o título: Ela é simplesmente incrível">
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ela é simplesmente incrível 💗">
+  <meta name="twitter:description" content="Lívia, eu fiz uma coisa pra você. Abre com carinho. Com todo o amor do Gabriel.">
+  <meta name="twitter:image" content="https://pra-livia.netlify.app/assets/img/social/og-image.jpg">
+  <meta name="twitter:image:alt" content="Polaroids da Lívia e do Gabriel com o título: Ela é simplesmente incrível">
+
+  <!-- Dados estruturados (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Ela é simplesmente incrível",
+    "alternateName": "Pra Lívia",
+    "url": "https://pra-livia.netlify.app/",
+    "inLanguage": "pt-BR",
+    "description": "Uma homenagem do Gabriel para a Lívia: momentos, fotos, mensagens e música.",
+    "image": "https://pra-livia.netlify.app/assets/img/social/og-image.jpg",
+    "author": { "@type": "Person", "name": "Gabriel" },
+    "about": { "@type": "Person", "name": "Lívia" }
+  }
+  </script>
+
+  <!-- Fontes (Google Fonts) e conexões antecipadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Quicksand:wght@400;500;600;700&display=swap">
+
+  <!-- Foto principal carregada primeiro (melhora o LCP) -->
+  <link rel="preload" as="image" href="/assets/img/fotos/livia-01-sm.webp" imagesrcset="/assets/img/fotos/livia-01-sm.webp 480w, /assets/img/fotos/livia-01.webp 900w" imagesizes="(max-width: 700px) 78vw, 420px">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+
+<body class="is-locked">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Fundo animado: corações flutuando (canvas) -->
+  <canvas id="hearts-canvas" class="hearts-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===================================================================
+       0) ABERTURA — o "envelope". O toque dela libera a música.
+       =================================================================== -->
+  <div id="intro" class="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+    <div class="intro__card">
+      <div class="envelope" aria-hidden="true">
+        <div class="envelope__body"></div>
+        <div class="envelope__letter">
+          <svg viewBox="0 0 32 32"><use href="#i-heart"/></svg>
+        </div>
+        <div class="envelope__front"></div>
+        <div class="envelope__flap"></div>
+      </div>
+      <p class="intro__eyebrow">Para a Lívia</p>
+      <h1 id="intro-title" class="intro__title">Tenho uma coisa pra você…</h1>
+      <p class="intro__hint">Aumenta o som e abre com carinho</p>
+      <button id="intro-open" class="btn btn--primary btn--glow" type="button">
+        <svg class="btn__icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg>
+        Abrir
+      </button>
+      <button id="intro-silent" class="intro__silent" type="button">Entrar sem música</button>
+    </div>
+  </div>
+
+  <!-- Player de música flutuante -->
+  <aside class="player" id="player" aria-label="Música">
+    <button class="player__toggle" id="player-toggle" type="button" aria-label="Tocar música" aria-pressed="false">
+      <svg class="player__icon player__icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      <span class="player__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    </button>
+    <div class="player__info">
+      <span class="player__label" id="player-label">Toque pra ouvir</span>
+      <span class="player__song" id="player-song">Thinking Out Loud · Ed Sheeran</span>
+    </div>
+    <button class="player__next" id="player-next" type="button" aria-label="Próxima música">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6.5v11a1 1 0 0 0 1.55.83L15 13.2V17a1 1 0 0 0 2 0V7a1 1 0 0 0-2 0v3.8L7.55 5.67A1 1 0 0 0 6 6.5z"/></svg>
+    </button>
+    <!-- O YouTube injeta o player aqui (fica escondido: só o áudio importa) -->
+    <div class="player__yt" aria-hidden="true"><div id="yt-player"></div></div>
+  </aside>
+
+  <main id="conteudo">
+
+    <!-- =================================================================
+         1) CAPA
+         ================================================================= -->
+    <header class="hero" id="inicio">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Uma homenagem para</p>
+        <h2 class="hero__name reveal" data-delay="1">Lívia</h2>
+        <p class="hero__title reveal" data-delay="2">Ela é simplesmente <em>incrível</em></p>
+        <p class="hero__typed reveal" data-delay="3">
+          <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+      </div>
+
+      <figure class="hero__photo reveal" data-delay="2">
+        <div class="hero__frame">
+          <img src="/assets/img/fotos/livia-01-sm.webp"
+               srcset="/assets/img/fotos/livia-01-sm.webp 480w, /assets/img/fotos/livia-01.webp 900w"
+               sizes="(max-width: 700px) 78vw, 420px"
+               width="900" height="1593" alt="Lívia sorrindo, com os cabelos cacheados soltos"
+               fetchpriority="high" decoding="async">
+        </div>
+        <span class="hero__badge" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><use href="#i-heart"/></svg>
+        </span>
+      </figure>
+
+      <a class="scroll-hint" href="#motivos">
+        <span>role com carinho</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <!-- Mensagem curta entre seções -->
+    <section class="quote" aria-label="Mensagem para a Lívia">
+      <p class="quote__text reveal">Entre todas as coisas lindas que eu já vi,<br><strong>você é a mais linda.</strong></p>
+    </section>
+
+    <!-- =================================================================
+         2) MOTIVOS — cartas que viram ao toque
+         ================================================================= -->
+    <section class="section reasons" id="motivos" aria-labelledby="motivos-titulo">
+      <header class="section__head">
+        <p class="eyebrow reveal">Toque nas cartas</p>
+        <h2 id="motivos-titulo" class="section__title reveal">Coisas que eu amo em você</h2>
+      </header>
+
+      <ul class="reasons__grid">
+        <li class="reveal"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>01</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">Seu sorriso, que muda o meu dia inteiro em um segundo.</span></span></button></li>
+        <li class="reveal" data-delay="1"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>02</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">Seus olhos, que dizem tudo sem você falar nada.</span></span></button></li>
+        <li class="reveal" data-delay="2"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>03</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">Esses cachos, que são uma obra de arte.</span></span></button></li>
+        <li class="reveal"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>04</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">O seu jeitinho, que ninguém mais no mundo tem.</span></span></button></li>
+        <li class="reveal" data-delay="1"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>05</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">A paz que eu sinto quando estou com você.</span></span></button></li>
+        <li class="reveal" data-delay="2"><button class="flip" type="button" aria-pressed="false"><span class="flip__inner"><span class="flip__front"><b>06</b><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">Revelar motivo</span></span><span class="flip__back">Você inteira. Do jeitinho que você é.</span></span></button></li>
+      </ul>
+    </section>
+
+    <!-- =================================================================
+         3) SLIDESHOW — as fotos passando sozinhas
+         ================================================================= -->
+    <section class="section show" id="momentos" aria-labelledby="momentos-titulo">
+      <header class="section__head">
+        <p class="eyebrow reveal">Nossos momentos</p>
+        <h2 id="momentos-titulo" class="section__title reveal">Cada foto, uma lembrança</h2>
+      </header>
+
+      <div class="show__stage reveal" id="slideshow" aria-roledescription="carrossel" aria-label="Fotos passando automaticamente">
+        <div class="show__progress" id="show-progress" aria-hidden="true"></div>
+        <div class="show__slides" id="show-slides"></div>
+        <p class="show__caption" id="show-caption"></p>
+        <button class="show__nav show__nav--prev" id="show-prev" type="button" aria-label="Foto anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="show__nav show__nav--next" id="show-next" type="button" aria-label="Próxima foto">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="quote" aria-label="Mensagem para a Lívia">
+      <p class="quote__text reveal">Se eu pudesse escolher de novo,<br><strong>eu escolheria você.</strong> Em todas as vidas.</p>
+    </section>
+
+    <!-- =================================================================
+         4) NÓS DOIS — polaroids
+         ================================================================= -->
+    <section class="section us" id="nos" aria-labelledby="nos-titulo">
+      <header class="section__head">
+        <p class="eyebrow reveal">Eu e você</p>
+        <h2 id="nos-titulo" class="section__title reveal">Nós dois</h2>
+      </header>
+
+      <div class="us__board">
+        <figure class="polaroid polaroid--a reveal">
+          <img src="/assets/img/fotos/livia-07-sm.webp" width="480" height="853" loading="lazy" decoding="async" alt="Lívia e Gabriel juntos numa festa junina, ele de chapéu de cowboy">
+          <figcaption>arraiá do nosso amor</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--b reveal" data-delay="1">
+          <img src="/assets/img/fotos/livia-02-sm.webp" width="480" height="853" loading="lazy" decoding="async" alt="Lívia e Gabriel lado a lado, olhando para a câmera">
+          <figcaption>minha pessoa favorita</figcaption>
+        </figure>
+        <figure class="polaroid polaroid--c reveal" data-delay="2">
+          <img src="/assets/img/fotos/livia-12-sm.webp" width="480" height="853" loading="lazy" decoding="async" alt="Gabriel e Lívia juntos à noite">
+          <figcaption>qualquer lugar com você</figcaption>
+        </figure>
+      </div>
+      <p class="us__note reveal">Do meu lado é o seu lugar.</p>
+    </section>
+
+    <!-- =================================================================
+         5) GALERIA — todas as fotos, com lightbox
+         ================================================================= -->
+    <section class="section gallery" id="galeria" aria-labelledby="galeria-titulo">
+      <header class="section__head">
+        <p class="eyebrow reveal">Toque para ampliar</p>
+        <h2 id="galeria-titulo" class="section__title reveal">Simplesmente você</h2>
+      </header>
+
+      <ul class="gallery__grid" id="gallery">
+        <!-- GALERIA:INICIO -->
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="0" data-full="/assets/img/fotos/livia-01.webp" data-caption="Esse sorriso é o meu lugar favorito."><img src="/assets/img/fotos/livia-01-sm.webp" srcset="/assets/img/fotos/livia-01-sm.webp 480w, /assets/img/fotos/livia-01.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1593" loading="lazy" decoding="async" alt="Lívia sorrindo, com os cabelos cacheados soltos"><span class="gallery__cap">Esse sorriso é o meu lugar favorito.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="1" data-full="/assets/img/fotos/livia-02.webp" data-caption="Nós dois: minha parte preferida de qualquer dia."><img src="/assets/img/fotos/livia-02-sm.webp" srcset="/assets/img/fotos/livia-02-sm.webp 480w, /assets/img/fotos/livia-02.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1600" loading="lazy" decoding="async" alt="Lívia e Gabriel lado a lado, olhando para a câmera"><span class="gallery__cap">Nós dois: minha parte preferida de qualquer dia.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="2" data-full="/assets/img/fotos/livia-03.webp" data-caption="Luz dourada, mas quem brilha é você."><img src="/assets/img/fotos/livia-03-sm.webp" srcset="/assets/img/fotos/livia-03-sm.webp 480w, /assets/img/fotos/livia-03.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1575" loading="lazy" decoding="async" alt="Lívia sorrindo sob uma luz dourada"><span class="gallery__cap">Luz dourada, mas quem brilha é você.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="3" data-full="/assets/img/fotos/livia-04.webp" data-caption="Até o sol fica com inveja."><img src="/assets/img/fotos/livia-04-sm.webp" srcset="/assets/img/fotos/livia-04-sm.webp 480w, /assets/img/fotos/livia-04.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="744" loading="lazy" decoding="async" alt="Lívia sorrindo ao lado de uma piscina, num dia de sol"><span class="gallery__cap">Até o sol fica com inveja.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="4" data-full="/assets/img/fotos/livia-05.webp" data-caption="Elegante sem nem tentar."><img src="/assets/img/fotos/livia-05-sm.webp" srcset="/assets/img/fotos/livia-05-sm.webp 480w, /assets/img/fotos/livia-05.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1481" loading="lazy" decoding="async" alt="Lívia de corpo inteiro com um vestido longo florido"><span class="gallery__cap">Elegante sem nem tentar.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="5" data-full="/assets/img/fotos/livia-06.webp" data-caption="Esse jeitinho que me desmonta."><img src="/assets/img/fotos/livia-06-sm.webp" srcset="/assets/img/fotos/livia-06-sm.webp 480w, /assets/img/fotos/livia-06.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="791" loading="lazy" decoding="async" alt="Lívia sorrindo com a mão perto do rosto"><span class="gallery__cap">Esse jeitinho que me desmonta.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="6" data-full="/assets/img/fotos/livia-07.webp" data-caption="Arraiá do nosso amor."><img src="/assets/img/fotos/livia-07-sm.webp" srcset="/assets/img/fotos/livia-07-sm.webp 480w, /assets/img/fotos/livia-07.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1600" loading="lazy" decoding="async" alt="Lívia e Gabriel juntos numa festa junina, ele de chapéu de cowboy"><span class="gallery__cap">Arraiá do nosso amor.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="7" data-full="/assets/img/fotos/livia-08.webp" data-caption="Por você, eu fico. Sempre."><img src="/assets/img/fotos/livia-08-sm.webp" srcset="/assets/img/fotos/livia-08-sm.webp 480w, /assets/img/fotos/livia-08.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1589" loading="lazy" decoding="async" alt="Lívia olhando para a câmera, com os cachos caindo no ombro"><span class="gallery__cap">Por você, eu fico. Sempre.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="8" data-full="/assets/img/fotos/livia-09.webp" data-caption="Linda de um jeito que nem dá pra explicar."><img src="/assets/img/fotos/livia-09-sm.webp" srcset="/assets/img/fotos/livia-09-sm.webp 480w, /assets/img/fotos/livia-09.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1575" loading="lazy" decoding="async" alt="Lívia com o cabelo liso, olhando para a câmera"><span class="gallery__cap">Linda de um jeito que nem dá pra explicar.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="9" data-full="/assets/img/fotos/livia-10.webp" data-caption="Seu olhar conversa comigo."><img src="/assets/img/fotos/livia-10-sm.webp" srcset="/assets/img/fotos/livia-10-sm.webp 480w, /assets/img/fotos/livia-10.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="788" loading="lazy" decoding="async" alt="Lívia deitada, sorrindo de leve"><span class="gallery__cap">Seu olhar conversa comigo.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="10" data-full="/assets/img/fotos/livia-11.webp" data-caption="Minha calma no meio do caos."><img src="/assets/img/fotos/livia-11-sm.webp" srcset="/assets/img/fotos/livia-11-sm.webp 480w, /assets/img/fotos/livia-11.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1582" loading="lazy" decoding="async" alt="Lívia sorrindo, com um colar delicado"><span class="gallery__cap">Minha calma no meio do caos.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="11" data-full="/assets/img/fotos/livia-12.webp" data-caption="Qualquer lugar fica especial com você."><img src="/assets/img/fotos/livia-12-sm.webp" srcset="/assets/img/fotos/livia-12-sm.webp 480w, /assets/img/fotos/livia-12.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1600" loading="lazy" decoding="async" alt="Gabriel e Lívia juntos à noite"><span class="gallery__cap">Qualquer lugar fica especial com você.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="12" data-full="/assets/img/fotos/livia-13.webp" data-caption="Delicada como uma flor."><img src="/assets/img/fotos/livia-13-sm.webp" srcset="/assets/img/fotos/livia-13-sm.webp 480w, /assets/img/fotos/livia-13.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="530" loading="lazy" decoding="async" alt="Lívia com a mão no queixo, sorrindo"><span class="gallery__cap">Delicada como uma flor.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="13" data-full="/assets/img/fotos/livia-14.webp" data-caption="Simples assim: perfeita."><img src="/assets/img/fotos/livia-14-sm.webp" srcset="/assets/img/fotos/livia-14-sm.webp 480w, /assets/img/fotos/livia-14.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1182" loading="lazy" decoding="async" alt="Lívia deitada, com o cabelo espalhado"><span class="gallery__cap">Simples assim: perfeita.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="14" data-full="/assets/img/fotos/livia-15.webp" data-caption="Seu sorriso contagia todo mundo."><img src="/assets/img/fotos/livia-15-sm.webp" srcset="/assets/img/fotos/livia-15-sm.webp 480w, /assets/img/fotos/livia-15.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1475" loading="lazy" decoding="async" alt="Lívia sorrindo ao lado de uma amiga"><span class="gallery__cap">Seu sorriso contagia todo mundo.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="15" data-full="/assets/img/fotos/livia-16.webp" data-caption="Seus olhos são meu poema favorito."><img src="/assets/img/fotos/livia-16-sm.webp" srcset="/assets/img/fotos/livia-16-sm.webp 480w, /assets/img/fotos/livia-16.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="596" loading="lazy" decoding="async" alt="Close do rosto da Lívia, com a mão no rosto"><span class="gallery__cap">Seus olhos são meu poema favorito.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="16" data-full="/assets/img/fotos/livia-17.webp" data-caption="Momentos que viram memória."><img src="/assets/img/fotos/livia-17-sm.webp" srcset="/assets/img/fotos/livia-17-sm.webp 480w, /assets/img/fotos/livia-17.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1589" loading="lazy" decoding="async" alt="Montagem de fotos da Lívia com a família e amigos numa festa junina"><span class="gallery__cap">Momentos que viram memória.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="17" data-full="/assets/img/fotos/livia-18.webp" data-caption="Sorriso que ilumina qualquer noite."><img src="/assets/img/fotos/livia-18-sm.webp" srcset="/assets/img/fotos/livia-18-sm.webp 480w, /assets/img/fotos/livia-18.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1475" loading="lazy" decoding="async" alt="Selfie da Lívia sorrindo com alguém querido"><span class="gallery__cap">Sorriso que ilumina qualquer noite.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="18" data-full="/assets/img/fotos/livia-19.webp" data-caption="Mesmo no escuro, você brilha."><img src="/assets/img/fotos/livia-19-sm.webp" srcset="/assets/img/fotos/livia-19-sm.webp 480w, /assets/img/fotos/livia-19.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="798" loading="lazy" decoding="async" alt="Lívia num ambiente com pouca luz, sorrindo"><span class="gallery__cap">Mesmo no escuro, você brilha.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="19" data-full="/assets/img/fotos/livia-20.webp" data-caption="Do jeitinho que eu amo."><img src="/assets/img/fotos/livia-20-sm.webp" srcset="/assets/img/fotos/livia-20-sm.webp 480w, /assets/img/fotos/livia-20.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1572" loading="lazy" decoding="async" alt="Lívia olhando para a câmera, com o cabelo solto"><span class="gallery__cap">Do jeitinho que eu amo.</span></button></li>
+        <li class="gallery__item reveal"><button class="gallery__btn" type="button" data-index="20" data-full="/assets/img/fotos/livia-21.webp" data-caption="Meu pensamento favorito, todo dia."><img src="/assets/img/fotos/livia-21-sm.webp" srcset="/assets/img/fotos/livia-21-sm.webp 480w, /assets/img/fotos/livia-21.webp 900w" sizes="(max-width: 600px) 50vw, (max-width: 1000px) 33vw, 300px" width="900" height="1589" loading="lazy" decoding="async" alt="Lívia com a mão perto do rosto, à noite"><span class="gallery__cap">Meu pensamento favorito, todo dia.</span></button></li>
+        <!-- GALERIA:FIM -->
+      </ul>
+    </section>
+
+    <section class="quote" aria-label="Mensagem para a Lívia">
+      <p class="quote__text reveal">Você é o meu lugar favorito<br><strong>no mundo inteiro.</strong></p>
+    </section>
+
+    <!-- =================================================================
+         6) O ANEL — feito em Python, só com as letras do nome dela
+         ================================================================= -->
+    <section class="section ring" id="anel" aria-labelledby="anel-titulo">
+      <div class="ring__media reveal">
+        <video id="ring-video" class="ring__video" width="768" height="768"
+               poster="/assets/video/anel-poster.webp" muted loop playsinline preload="none"
+               aria-label="Um anel de diamante feito de letras, girando em 3D">
+          <source src="/assets/video/anel.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="ring__text">
+        <p class="eyebrow reveal">Feito à mão, linha por linha</p>
+        <h2 id="anel-titulo" class="section__title reveal">Um anel escrito com o seu nome</h2>
+        <p class="ring__copy reveal">Cada pedacinho desse anel é uma letra do seu nome: <b>L·I·V·I·A</b>. Eu programei ele em Python, ponto por ponto, só pra ele girar aqui pra você.</p>
+        <p class="ring__copy ring__copy--soft reveal">Um dia, um de verdade. <span aria-hidden="true">💍</span></p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7) CARTA
+         ================================================================= -->
+    <section class="section letter" id="carta" aria-labelledby="carta-titulo">
+      <h2 id="carta-titulo" class="visually-hidden">Uma carta para a Lívia</h2>
+      <article class="letter__paper reveal">
+        <p class="letter__greeting">Lívia,</p>
+        <p>Eu fiz este site porque palavras soltas não dão conta do que eu sinto.</p>
+        <p>Você é luz nos meus dias, calma nos meus pensamentos e o sorriso que eu procuro em todo lugar.</p>
+        <p>Obrigado por ser exatamente quem você é: <em>simplesmente incrível.</em></p>
+        <p class="letter__sign">Com todo o meu amor,<br><span>Gabriel</span></p>
+      </article>
+    </section>
+
+    <!-- =================================================================
+         8) FINAL — o beijo
+         ================================================================= -->
+    <section class="section kiss" id="beijo" aria-labelledby="beijo-titulo">
+      <div class="kiss__lips reveal" aria-hidden="true">💋</div>
+      <h2 id="beijo-titulo" class="kiss__title reveal">Tem um beijo seu<br>esperando aqui…</h2>
+      <p class="kiss__sub reveal">E aí, você quer?</p>
+
+      <div class="kiss__actions reveal" id="kiss-actions">
+        <button class="btn btn--primary btn--glow" id="kiss-yes" type="button">
+          <svg class="btn__icon" viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg>
+          Quero
+        </button>
+        <button class="btn btn--ghost" id="kiss-no" type="button">Não quero</button>
+      </div>
+      <p class="kiss__feedback" id="kiss-feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Feito com <svg viewBox="0 0 32 32" aria-hidden="true"><use href="#i-heart"/></svg><span class="visually-hidden">amor</span> pelo Gabriel, só pra Lívia.</p>
+    <p class="footer__small">© <span id="year">2026</span> · pra-livia.netlify.app</p>
+  </footer>
+
+  <!-- Lightbox (foto ampliada) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lightbox__close" id="lb-close" type="button" aria-label="Fechar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lb-prev" type="button" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lb-next" type="button" aria-label="Próxima foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+    <p class="lightbox__count" id="lb-count"></p>
+  </div>
+
+  <!-- Ícones SVG reutilizáveis -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-heart" viewBox="0 0 32 32">
+      <path d="M16 28.6s-11.4-7-11.4-15.1A6.6 6.6 0 0 1 16 9.2a6.6 6.6 0 0 1 11.4 4.3C27.4 21.6 16 28.6 16 28.6z"/>
+    </symbol>
+  </svg>
+
+  <!-- Sem JavaScript: mostra tudo direto, sem a abertura -->
+  <noscript>
+    <style>.reveal{opacity:1!important;transform:none!important}.intro,.player{display:none!important}body.is-locked{overflow:auto!important}</style>
+  </noscript>
+</body>
+</html>
