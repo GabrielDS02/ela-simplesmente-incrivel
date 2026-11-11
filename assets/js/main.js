@@ -25,13 +25,13 @@
      CONFIG — é só mexer aqui para personalizar
      ------------------------------------------------------------------------ */
   const CONFIG = {
-    // Número do Lucas com DDI 55 + DDD + número, só dígitos. Ex.: "5531999999999"
+    // Número do Gabriel com DDI 55 + DDD + número, só dígitos. Ex.: "5531999999999"
     whatsapp: "553185073624",
 
-    // Mensagens que chegam no WhatsApp do Lucas
+    // Mensagens que chegam no WhatsApp do Gabriel
     messages: {
-      yes: "Lucas, eu vi o site… e QUERO meu beijo! 💋💗",
-      no: "Lucas, eu cliquei em \"Não quero\" 🙈 (mas você sabe que é mentira 😏💋)",
+      yes: "Gabriel, eu vi o site… e QUERO meu beijo! 💋💗",
+      no: "Gabriel, eu cliquei em \"Não quero\" 🙈 (mas você sabe que é mentira 😏💋)",
     },
 
     // Músicas (IDs de vídeos oficiais do YouTube). A primeira toca ao abrir.

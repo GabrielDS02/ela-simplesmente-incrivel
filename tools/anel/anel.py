@@ -25,7 +25,7 @@ Uso:
     python tools/anel/anel.py            # gera vídeo + pôster
     python tools/anel/anel.py --preview  # salva só um quadro de teste
 
-Feito com amor por Lucas, para a Lívia. ♥
+Feito com amor por Gabriel, para a Lívia. ♥
 """
 
 from __future__ import annotations

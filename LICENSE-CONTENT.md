@@ -1,6 +1,6 @@
 # Licença do conteúdo pessoal
 
-**© 2026 Lucas e Lívia. Todos os direitos reservados.**
+**© 2026 Gabriel e Lívia. Todos os direitos reservados.**
 
 A licença MIT do arquivo [`LICENSE`](LICENSE) vale **somente para o código-fonte**
 (HTML, CSS, JavaScript e Python). Ela **não** se aplica ao conteúdo pessoal deste

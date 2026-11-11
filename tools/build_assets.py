@@ -63,7 +63,7 @@ CURADORIA = [
          alt="Lívia sorrindo, com os cabelos cacheados soltos"),
     dict(src=19,
          cap="Nós dois: minha parte preferida de qualquer dia.",
-         alt="Lívia e Lucas lado a lado, olhando para a câmera"),
+         alt="Lívia e Gabriel lado a lado, olhando para a câmera"),
     dict(src=12,
          cap="Luz dourada, mas quem brilha é você.",
          alt="Lívia sorrindo sob uma luz dourada"),
@@ -78,7 +78,7 @@ CURADORIA = [
          alt="Lívia sorrindo com a mão perto do rosto"),
     dict(src=18,
          cap="Arraiá do nosso amor.",
-         alt="Lívia e Lucas juntos numa festa junina, ele de chapéu de cowboy"),
+         alt="Lívia e Gabriel juntos numa festa junina, ele de chapéu de cowboy"),
     dict(src=6,
          cap="Por você, eu fico. Sempre.",
          alt="Lívia olhando para a câmera, com os cachos caindo no ombro"),
@@ -93,7 +93,7 @@ CURADORIA = [
          alt="Lívia sorrindo, com um colar delicado"),
     dict(src=20,
          cap="Qualquer lugar fica especial com você.",
-         alt="Lucas e Lívia juntos à noite"),
+         alt="Gabriel e Lívia juntos à noite"),
     dict(src=8, crop=0.333,
          cap="Delicada como uma flor.",
          alt="Lívia com a mão no queixo, sorrindo"),
@@ -361,7 +361,7 @@ def banner_landscape(photos, size=(1200, 630)):
            fill=CREAM, anchor="lm")
     d.text((x0 - 4, h * 0.58), "incrível", font=font("script", int(118 * s)),
            fill=ROSE, anchor="lm")
-    d.text((x0, h * 0.76), "Um site feito com todo o amor do Lucas",
+    d.text((x0, h * 0.76), "Um site feito com todo o amor do Gabriel",
            font=font("sans", int(25 * s), 500), fill=ROSE_SOFT, anchor="lm")
     draw_heart(img, x0 + 14 * s, h * 0.88, 26 * s, heart_gradient_fill(64))
     d.text((x0 + 38 * s, h * 0.88), "pra-livia.netlify.app",
@@ -388,7 +388,7 @@ def banner_portrait(photos, size):
     text_center(d, (w / 2, base + 225 * k), "incrível",
                 font("script", int(170 * k)), ROSE)
     text_center(d, (w / 2, base + (360 if tall else 340) * k),
-                "com todo o amor do Lucas", font("sans", int(36 * k), 500),
+                "com todo o amor do Gabriel", font("sans", int(36 * k), 500),
                 ROSE_SOFT)
     if tall:
         draw_heart(img, w / 2, base + 470 * k, 44 * k, heart_gradient_fill(64))

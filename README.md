@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="docs/banner.png" alt="Banner: Ela é simplesmente incrível. Um site feito com todo o amor do Lucas para a Lívia" width="100%">
+<img src="docs/banner.png" alt="Banner: Ela é simplesmente incrível. Um site feito com todo o amor do Gabriel para a Lívia" width="100%">
 
 # Ela é simplesmente incrível 💗
 
-**Um site de homenagem feito com todo o amor do Lucas para a Lívia.**
+**Um site de homenagem feito com todo o amor do Gabriel para a Lívia.**
 Nossos momentos, as fotos mais lindas dela, mensagens do coração, uma música especial
 e um anel de diamante escrito em Python com as letras do nome dela.
 
@@ -50,7 +50,7 @@ no final, um beijo esperando por ela.
 | 🔍 **Galeria + lightbox** | 21 fotos em mosaico, com zoom, swipe, setas do teclado e contador. |
 | 💍 **Anel em Python** | Um anel de diamante feito com as letras de **LIVIA** e o nome *Lívia* brilhando no centro, renderizado em 3D por `tools/anel/anel.py`. |
 | ✉️ **Carta** | Uma carta curta, em papel pautado. |
-| 💋 **"Tem um beijo seu esperando aqui"** | Botões **Quero** e **Não quero** que mandam uma mensagem no WhatsApp do Lucas. O "Não quero" foge algumas vezes antes de deixar ela clicar. 😏 |
+| 💋 **"Tem um beijo seu esperando aqui"** | Botões **Quero** e **Não quero** que mandam uma mensagem no WhatsApp do Gabriel. O "Não quero" foge algumas vezes antes de deixar ela clicar. 😏 |
 | 👆 **Corações no toque** | Coraçõezinhos saem de onde ela tocar na tela. |
 
 ## 🚀 Qualidade
@@ -184,7 +184,7 @@ Este repositório é público, mas **nem tudo nele é livre para reutilizar**:
 | O quê | Licença |
 | --- | --- |
 | Código-fonte (HTML, CSS, JS, Python) | [MIT](LICENSE) |
-| Fotos, textos pessoais e banners | **© Lucas e Lívia, todos os direitos reservados** ([detalhes](LICENSE-CONTENT.md)) |
+| Fotos, textos pessoais e banners | **© Gabriel e Lívia, todos os direitos reservados** ([detalhes](LICENSE-CONTENT.md)) |
 | Fontes (Great Vibes, Playfair Display, Quicksand) | [SIL Open Font License 1.1](https://openfontlicense.org) |
 | Músicas | Direitos dos artistas. Nenhum áudio é hospedado aqui: elas tocam pelo player oficial do YouTube. |
 
@@ -196,7 +196,7 @@ Veja também: [Código de conduta](CODE_OF_CONDUCT.md) · [Como contribuir](CONT
 
 <div align="center">
 
-Feito com 💗 pelo **Lucas**, só pra **Lívia**.
+Feito com 💗 pelo **Gabriel**, só pra **Lívia**.
 
 *Porque ela é simplesmente incrível.*
 
